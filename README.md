@@ -1,6 +1,9 @@
 # binrw
 binary data reader/writer which may pack/unpack c++ standard simple data
 
+supported platforms:
+win32, linux
+
 supported data types:
 char,
 wchar_t (USE_WCHAR macro),

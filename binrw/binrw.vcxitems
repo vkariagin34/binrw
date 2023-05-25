@@ -19,7 +19,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)bin_writer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)bin_writer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)main.cpp" />
   </ItemGroup>
 </Project>

@@ -24,6 +24,8 @@ int main()
 	int64_t int64 = 5'555'555'555'555;
 	uint64_t uint64 = 5'555'555'555'555;
 
+	float flt = 555.555f;
+
 	// -------------------------------------
 	std::string string = "hello, binrw!";
 
@@ -55,6 +57,8 @@ int main()
 
 	writer.write(string);
 
+	writer.write(flt);
+
 #ifdef USE_WCHAR
 	writer.write(wstring);
 #endif
@@ -79,6 +83,8 @@ int main()
 	uint64 = 0;
 
 	string = "";
+
+	flt = 0.0f;
 
 #ifdef USE_WCHAR
 	wstring = L"";
@@ -108,6 +114,8 @@ int main()
 	uint64 = reader.read_uint64();
 
 	string = reader.read_string();
+
+	flt = reader.read_float();
 
 #ifdef USE_WCHAR
 	wstring = reader.read_wstring();

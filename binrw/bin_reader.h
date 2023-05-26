@@ -44,6 +44,12 @@ public:
 	}
 #endif
 
+	inline float read_float()
+	{
+		int32_t result = read_int32();
+		return *reinterpret_cast<float *>(&result);
+	}
+
 public:
 	inline int8_t read_int8()
 	{

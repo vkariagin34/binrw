@@ -41,6 +41,12 @@ public:
 	}
 #endif
 
+	inline void write(const float &value)
+	{
+		const int32_t _value = *reinterpret_cast<const int32_t *>(&value);
+		write(_value);
+	}
+
 public:
 	inline void write(const int8_t &value)
 	{

@@ -6,6 +6,7 @@ win32, linux
 
 supported data types:
 char,
+float,
 wchar_t (USE_WCHAR macro),
 int8_t,
 uint8_t,
